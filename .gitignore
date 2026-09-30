@@ -1,0 +1,9 @@
+# Configuración local de Claude Code
+.claude/
+
+# Descargas originales del sitio viejo (no se usan en la web)
+img/_original/
+
+# Windows
+Thumbs.db
+desktop.ini
