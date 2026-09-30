@@ -23,7 +23,7 @@ reparación, sensores de asiento) · tacógrafos y GPS/AVL · programación/repa
 inyección electrónica · lubricentro · llaves codificadas y cerrajería (auto y hogar).
 
 **Productos publicados en el catálogo:**
-- Fulmar **ZTX-PRO** (NOVEDAD destacada) — táctil, OBD2 sin sensor, app de monitoreo, 2 tarifas, reportes.
+- Fulmar **ZTX-PRO** (NOVEDAD destacada) — táctil, OBD2 sin sensor, app de monitoreo, **hasta 9 tarifas** (dato del dueño; no poner "2 tarifas"), reportes.
 - Fulmar **Tango XP** — 6 dígitos, 6 tarifas, CAN Bus, GPS, impresora (foto oficial sacada del folleto PDF de Ful-Mar).
 - Ariel Tax Milenio · Nervex Microprinter Serie II · GP Digi Tax Printer (taxímetros)
 - Tacógrafos: **Fulmar FMD-1000** (lo instalan; foto de fábrica) y Digi Tac RPM II.
