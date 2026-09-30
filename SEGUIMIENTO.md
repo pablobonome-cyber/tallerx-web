@@ -61,7 +61,16 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
 - Fuentes Google: Barlow Condensed (títulos), Barlow (texto), Share Tech Mono (display LED).
 - Idioma: español rioplatense (voseo: "pedí", "contanos").
 
-## 3. Entorno local
+## 3. Repositorio y publicación
+
+- Git local en la carpeta del proyecto, rama `main`.
+- GitHub (privado): https://github.com/pablobonome-cyber/tallerx-web
+- Publicación temporal: **Vercel** (plan Hobby, importando el repo). Cada `git push` a `main` republica solo.
+  - `.vercelignore` excluye SEGUIMIENTO.md y CLAUDE.md de la web publicada.
+  - `vercel.json` pone `X-Robots-Tag: noindex` en *.vercel.app (que Google no la indexe) y cache para img/video.
+  - Ojo: Hobby es para uso no comercial → para el sitio definitivo evaluar Cloudflare Pages / Netlify.
+
+## 3b. Entorno local
 
 - El dueño usa **WampServer** (Apache en puerto 80, PHP/MySQL disponibles).
 - `C:\wamp64\www` tiene otros proyectos (puente Mercado Pago) → **no tocar**.
