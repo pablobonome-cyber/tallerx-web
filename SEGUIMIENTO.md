@@ -91,6 +91,8 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
       desbloqueado (RDAP sin clientTransferProhibited). Próximo: el dueño transfiere a Namecheap/Porkbun
       (recomendados), luego Vercel → Settings → Domains + DNS (A @ 76.76.21.21, CNAME www cname.vercel-dns.com)
       y quitar el `noindex` de vercel.json para el dominio propio (hoy solo aplica a *.vercel.app).
+      01/10/2026: **transferencia iniciada a Porkbun** (porkbun.com). Tarda 1–7 días. Al completarse,
+      el registrador en RDAP pasa a Porkbun → seguir con Vercel Domains + DNS en Porkbun.
       Paso 2: transferir a registrador propio y apuntar DNS al hosting nuevo.
 - [ ] Elegir hosting y publicar el sitio.
 - [ ] Edición de video real (cortes, audio, compresión) — necesita ffmpeg (no instalado).
