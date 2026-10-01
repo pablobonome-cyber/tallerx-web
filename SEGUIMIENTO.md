@@ -86,7 +86,11 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
       Yell Argentina hoy es **gurú** (Soluciones Multimedia S.A., CUIT 30-65411876-7). Contacto:
       clientes@gurusoluciones.com.ar y clientes@gurusoluciones.com · WhatsApp +54 9 11 2314 3608 ·
       Tel. 011 6090-0100 / 0810-333-8080 · portal https://login.guruconecta.com/
-      30/09/2026: se envió el pedido; gurú respondió que **están viendo el caso**. Esperando código EPP.
+      30/09/2026: se envió el pedido; gurú respondió que **están viendo el caso**.
+      01/10/2026: gurú **envió el código EPP** (lo tiene el dueño; NO guardarlo en archivos). Dominio ya
+      desbloqueado (RDAP sin clientTransferProhibited). Próximo: el dueño transfiere a Namecheap/Porkbun
+      (recomendados), luego Vercel → Settings → Domains + DNS (A @ 76.76.21.21, CNAME www cname.vercel-dns.com)
+      y quitar el `noindex` de vercel.json para el dominio propio (hoy solo aplica a *.vercel.app).
       Paso 2: transferir a registrador propio y apuntar DNS al hosting nuevo.
 - [ ] Elegir hosting y publicar el sitio.
 - [ ] Edición de video real (cortes, audio, compresión) — necesita ffmpeg (no instalado).
