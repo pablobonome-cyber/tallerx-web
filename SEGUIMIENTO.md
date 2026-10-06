@@ -134,6 +134,13 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
 - Se agregó el tacógrafo Fulmar FMD-1000 al catálogo, a la tarjeta de servicios y al formulario.
 - El dueño va a pasar **más videos** para recortar partes y dejarlos sin audio o con un audio como el de fábrica.
 
+### 2026-10-05 — Separación en tres proyectos
+- Sin cambios en el sitio. Se separó el trabajo en tres carpetas, cada una con su `CLAUDE.md`:
+  `C:\Users\ADMIN\pagina tallerx` (web para clientes), `C:\Users\ADMIN\tallerx-diagnosticos`
+  (fallas de autos, con `INDICE.md` y `casos/`) y `C:\Users\ADMIN\libre` (consultas sueltas).
+- En la barra lateral de la app se crearon los grupos "Web para clientes", "Diagnósticos de autos" y "Libre".
+- El caso del Gol Trend (velocímetro sin ABS, tablero 5U0920827N) quedó guardado en la carpeta de diagnósticos.
+
 ### 2026-10-06 — Sesión en la segunda PC
 - Se instaló Git y se clonó el repo en `E:\Documentos\Proyectos\tallerx-web` (ver 3b). Sin cambios en el sitio.
 - Se consultó el RDAP de tallerxlp.com: sigue en `pending transfer` hacia Porkbun (detalle en Pendientes).
