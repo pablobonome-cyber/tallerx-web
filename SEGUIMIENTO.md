@@ -77,6 +77,8 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
 - No hay Node ni Python instalados. Para previsualizar sin Wamp se puede abrir `index.html`
   directamente o usar un servidor temporal en otro puerto (no 80).
 - Pendiente decidir: copiar el sitio a `C:\wamp64\www\tallerx` o crear un alias en Wamp.
+- **Segunda PC** (desde 06/10/2026): repo clonado en `E:\Documentos\Proyectos\tallerx-web`, Git instalado.
+  No se verificó si tiene Wamp. Antes de trabajar en cualquiera de las dos PCs: `git pull`; al terminar: `git push`.
 
 ## 4. Pendientes / ideas
 
@@ -93,6 +95,9 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
       y quitar el `noindex` de vercel.json para el dominio propio (hoy solo aplica a *.vercel.app).
       01/10/2026: **transferencia iniciada a Porkbun** (porkbun.com). Tarda 1–7 días. Al completarse,
       el registrador en RDAP pasa a Porkbun → seguir con Vercel Domains + DNS en Porkbun.
+      06/10/2026: RDAP sigue en `pending transfer` (registrador todavía Arsys/Nicline, DNS de Yell).
+      El plazo de 5 días de Arsys vence el 06/10 ~19:30 h ARG; si el 07/10 a la tarde sigue igual,
+      escribir al soporte de Porkbun.
       Paso 2: transferir a registrador propio y apuntar DNS al hosting nuevo.
 - [ ] Elegir hosting y publicar el sitio.
 - [ ] Edición de video real (cortes, audio, compresión) — necesita ffmpeg (no instalado).
@@ -128,3 +133,7 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
 - Catálogo: tarjeta "Ariel Tax · Reloj de 6 dígitos" (falta foto y nombre exacto del modelo).
 - Se agregó el tacógrafo Fulmar FMD-1000 al catálogo, a la tarjeta de servicios y al formulario.
 - El dueño va a pasar **más videos** para recortar partes y dejarlos sin audio o con un audio como el de fábrica.
+
+### 2026-10-06 — Sesión en la segunda PC
+- Se instaló Git y se clonó el repo en `E:\Documentos\Proyectos\tallerx-web` (ver 3b). Sin cambios en el sitio.
+- Se consultó el RDAP de tallerxlp.com: sigue en `pending transfer` hacia Porkbun (detalle en Pendientes).
