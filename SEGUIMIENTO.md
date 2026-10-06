@@ -144,3 +144,10 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
 ### 2026-10-06 — Sesión en la segunda PC
 - Se instaló Git y se clonó el repo en `E:\Documentos\Proyectos\tallerx-web` (ver 3b). Sin cambios en el sitio.
 - Se consultó el RDAP de tallerxlp.com: sigue en `pending transfer` hacia Porkbun (detalle en Pendientes).
+
+### 2026-10-06 — Respaldo de proyectos y chats (PC principal)
+- Sin cambios en el sitio. Se bajó el commit de la segunda PC y se resolvió el cruce en esta bitácora.
+- Se armó `C:\Users\ADMIN\tallerx-respaldo` (repo git local): copia de Diagnósticos, Libre, Recetas,
+  Receta Kimchi y los chats de Claude (`.claude\projects`). `respaldar.ps1` vuelve a copiar, hace commit y push.
+  Destino: repo **privado** `pablobonome-cyber/tallerx-respaldo`. Los chats van sin revisar (pueden tener el código EPP).
+- No se incluyó: `C:\wamp64\www` (credenciales de Mercado Pago), `Documents\Codex` y chats de Codex (~700 MB), firmware (MPLAB/CCS).
