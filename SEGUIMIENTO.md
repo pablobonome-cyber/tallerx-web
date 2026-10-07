@@ -165,3 +165,14 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
   Receta Kimchi y los chats de Claude (`.claude\projects`). `respaldar.ps1` vuelve a copiar, hace commit y push.
   Destino: repo **privado** `pablobonome-cyber/tallerx-respaldo`. Los chats van sin revisar (pueden tener el código EPP).
 - No se incluyó: `C:\wamp64\www` (credenciales de Mercado Pago), `Documents\Codex` y chats de Codex (~700 MB), firmware (MPLAB/CCS).
+
+### 2026-10-07 — Dominio propio online y revisión general
+- tallerxlp.com transferido a Porkbun, DNS apuntando a Vercel, **https://www.tallerxlp.com online** (detalle en Pendientes).
+- Reenvío de correo comercial@tallerxlp.com → Gmail del dueño (Porkbun, gratis).
+- Revisión completa del sitio publicado (celular 375 px y escritorio): sin imágenes rotas ni desbordes;
+  WhatsApp, formulario de turnos, filtros, menú y videos OK.
+- Arreglos: fotos de portada a ancho completo en tablet/celular; dirección en una línea en celular;
+  etiquetas Open Graph (vista previa al compartir el link) y `canonical`.
+- Observaciones sin resolver: tarjeta "Ariel 6 dígitos" sigue con "Foto próximamente"; "+10 años" sin confirmar;
+  videos pesan 48 MB (comprimir con ffmpeg); el formulario deja elegir domingos; plan Hobby de Vercel no es
+  para uso comercial (evaluar Cloudflare Pages / Netlify).
