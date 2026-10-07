@@ -98,6 +98,11 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
       06/10/2026: RDAP sigue en `pending transfer` (registrador todavía Arsys/Nicline, DNS de Yell).
       El plazo de 5 días de Arsys vence el 06/10 ~19:30 h ARG; si el 07/10 a la tarde sigue igual,
       escribir al soporte de Porkbun.
+      07/10/2026: **TRANSFERENCIA COMPLETA.** RDAP: registrador Porkbun LLC, vence **06/12/2027**,
+      bloqueado contra transferencias. Los DNS siguen siendo los de Yell (muertos) → falta:
+      (a) en Porkbun, volver a los nameservers por defecto de Porkbun; (b) en Vercel, Settings → Domains,
+      agregar tallerxlp.com y www; (c) en Porkbun DNS, borrar registros de estacionamiento y cargar los
+      que indique Vercel. Después: mail comercial@tallerxlp.com (hoy no funciona; opción: reenvío de Porkbun).
       Paso 2: transferir a registrador propio y apuntar DNS al hosting nuevo.
 - [ ] Elegir hosting y publicar el sitio.
 - [ ] Edición de video real (cortes, audio, compresión) — necesita ffmpeg (no instalado).
