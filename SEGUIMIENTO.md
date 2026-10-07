@@ -176,3 +176,5 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
 - Observaciones sin resolver: tarjeta "Ariel 6 dígitos" sigue con "Foto próximamente"; "+10 años" sin confirmar;
   videos pesan 48 MB (comprimir con ffmpeg); el formulario deja elegir domingos; plan Hobby de Vercel no es
   para uso comercial (evaluar Cloudflare Pages / Netlify).
+- Respaldo: se creó el repo privado `pablobonome-cyber/tallerx-respaldo` y se subió por primera vez
+  (`respaldar.ps1`, 07/10 15:46, 163 archivos). Para actualizarlo: volver a correr `respaldar.ps1`.
