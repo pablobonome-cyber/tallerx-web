@@ -109,7 +109,9 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
       Porkbun DNS: `A @ 216.198.79.1` y `CNAME www 71cfab6b7e28d8ae.vercel-dns-017.com`.
       **https://www.tallerxlp.com ONLINE con HTTPS** (verificado). El noindex solo aplica a *.vercel.app, así que
       el dominio propio ya es indexable; se agregó `<link rel="canonical">` a www.tallerxlp.com.
-      Pendiente: mail comercial@tallerxlp.com (no hay registros MX) y Google Business / Search Console.
+      07/10/2026: **correo activado** — reenvío gratuito de Porkbun: comercial@tallerxlp.com → Gmail del dueño.
+      MX fwd1/fwd2.porkbun.com y SPF creados automáticamente. Es solo recepción (para responder "como"
+      comercial@ haría falta casilla paga o configurar envío SMTP). Pendiente: Google Business / Search Console.
       Paso 2: transferir a registrador propio y apuntar DNS al hosting nuevo.
 - [ ] Elegir hosting y publicar el sitio.
 - [ ] Edición de video real (cortes, audio, compresión) — necesita ffmpeg (no instalado).
