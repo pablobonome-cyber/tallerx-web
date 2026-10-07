@@ -340,7 +340,7 @@ h3 { font-size: 1.45rem; text-transform: uppercase; }
 /* ===== Responsive ===== */
 @media (max-width: 980px) {
   .hero__inner, .novedad__inner, .turnos__inner, .contact { grid-template-columns: 1fr; }
-  .hero__meter { max-width: 560px; margin: 0 auto 30px; }
+  .hero__meter { width: 100%; max-width: 560px; margin: 0 auto 30px; }
   .meter { left: 12px; }
   .cards { grid-template-columns: repeat(2, 1fr); }
   .products { grid-template-columns: repeat(2, 1fr); }
