@@ -367,6 +367,7 @@ h3 { font-size: 1.45rem; text-transform: uppercase; }
   .nav.is-open { display: flex; }
   .nav a { padding: 14px 0; border-bottom: 1px solid var(--line); }
   .hero { padding-top: 44px; }
+  .hero .eyebrow { font-size: .72rem; letter-spacing: .06em; }
   .hero__meter { display: flex; flex-direction: column; }
   .meter { position: relative; order: 2; left: 0; bottom: 0; margin-top: -36px; min-width: 0; margin-inline: 12px; }
   .led { font-size: 1.8rem; }
