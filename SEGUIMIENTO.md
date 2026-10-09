@@ -185,7 +185,11 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
   pantalla táctil alta resolución, importes hasta 7 dígitos, estados libre/ocupado/reservado, OBD-II + CAN BUS,
   Bluetooth, telemetría (velocidad, RPM, temperatura, combustible), Tango Driver, Taxi Plus (flotas), pago QR,
   comprobante digital, anuncio por voz, INMETRO Cert. 444/2026, fabricado en Argentina.
-  Propuesta pendiente de OK: ampliar el bloque ZTX-PRO con esos datos. Dudas abiertas: "sin sensor de velocidad"
-  (no figura en material oficial) y si está homologado en Argentina además de INMETRO.
+  Duda abierta: 
+  si está homologado en Argentina además de INMETRO (la web solo dice lo del documento).
 - Correcciones de la fábrica aplicadas: marca siempre **FUL-MAR**; título de la sección N° 1 →
   "Nosotros instalamos el primer Reloj Taxímetro ZTX-PRO en Argentina".
+- Publicado (con OK del dueño): bloque ZTX-PRO ampliado con datos del guion de FUL-MAR y sección nueva
+  `#ecosistema` (ZTX-PRO → Tango Driver → Taxi Plus + línea "para el pasajero"). Se quitó "sin sensor de
+  velocidad" (no figura en material oficial); ahora dice "OBD-II · compatible con CAN BUS".
+  ZTX-PRO: hasta 9 tarifas, importes hasta 7 dígitos, INMETRO Cert. 444/2026, fabricado en Argentina.

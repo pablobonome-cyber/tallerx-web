@@ -175,6 +175,37 @@ h3 { font-size: 1.45rem; text-transform: uppercase; }
   background: var(--ink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m6 12 4 4 8-8' fill='none' stroke='%23e9a23b' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat;
 }
 
+.novedad__cert {
+  font: 600 .82rem/1.4 var(--body); letter-spacing: .04em; text-transform: uppercase;
+  border-left: 3px solid var(--ink); padding-left: 12px; margin: 0 0 24px; opacity: .85;
+}
+
+/* ===== Ecosistema ZTX-PRO ===== */
+.eco { background: var(--ink-2); color: var(--white); padding: 80px 0; }
+.eco__head { max-width: 720px; margin: 0 auto 44px; text-align: center; }
+.eco__head p:last-child { color: #c3c6cc; margin: 0; }
+.eco__flow { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 44px; }
+.eco__step { position: relative; background: var(--ink); border: 1px solid #353941; border-radius: var(--radius); padding: 28px; }
+.eco__step + .eco__step::before {
+  content: ""; position: absolute; left: -36px; top: 52px; width: 28px; height: 14px; background: var(--orange);
+  clip-path: polygon(0 35%, 62% 35%, 62% 0, 100% 50%, 62% 100%, 62% 65%, 0 65%);
+}
+.eco__icon {
+  width: 56px; height: 56px; border-radius: 12px; background: var(--orange); color: var(--ink);
+  display: grid; place-items: center; margin-bottom: 18px; transform: skewX(-8deg);
+}
+.eco__icon svg { width: 30px; height: 30px; transform: skewX(8deg); }
+.eco__step h3 { margin-bottom: 4px; }
+.eco__role { color: var(--orange); font-weight: 600; margin: 0 0 14px; }
+.eco__step ul { list-style: none; padding: 0; margin: 0; color: #c3c6cc; }
+.eco__step li { padding: 7px 0; border-top: 1px dashed #353941; }
+.eco__pax {
+  margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px 12px;
+  color: #c3c6cc;
+}
+.eco__pax strong { color: var(--white); margin-right: 4px; }
+.eco__pax span { border: 1px solid #454a54; border-radius: 999px; padding: 8px 14px; font-size: .95rem; }
+
 /* ===== Primer ZTX-PRO instalado ===== */
 .primero {
   background:
@@ -340,6 +371,9 @@ h3 { font-size: 1.45rem; text-transform: uppercase; }
 /* ===== Responsive ===== */
 @media (max-width: 980px) {
   .hero__inner, .novedad__inner, .turnos__inner, .contact { grid-template-columns: 1fr; }
+  .eco { padding: 60px 0; }
+  .eco__flow { grid-template-columns: 1fr; gap: 40px; max-width: 560px; margin-inline: auto; }
+  .eco__step + .eco__step::before { left: 50%; top: -34px; transform: translateX(-50%) rotate(90deg); }
   .hero__meter { width: 100%; max-width: 560px; margin: 0 auto 30px; }
   .meter { left: 12px; }
   .cards { grid-template-columns: repeat(2, 1fr); }
