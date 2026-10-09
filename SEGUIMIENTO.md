@@ -60,6 +60,7 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
 - El formulario de turnos **no guarda nada**: arma el mensaje y abre WhatsApp.
 - Fuentes Google: Barlow Condensed (títulos), Barlow (texto), Share Tech Mono (display LED).
 - Idioma: español rioplatense (voseo: "pedí", "contanos").
+- **Marca: escribir siempre `FUL-MAR`** (mayúsculas y guion medio), nunca "Fulmar". Pedido de la fábrica (09/10/2026).
 
 ## 3. Repositorio y publicación
 
@@ -178,3 +179,13 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
   para uso comercial (evaluar Cloudflare Pages / Netlify).
 - Respaldo: se creó el repo privado `pablobonome-cyber/tallerx-respaldo` y se subió por primera vez
   (`respaldar.ps1`, 07/10 15:46, 163 archivos). Para actualizarlo: volver a correr `respaldar.ps1`.
+
+### 2026-10-09 — Correcciones pedidas por FUL-MAR
+- El dueño pasó el guion de la presentación del ZTX-PRO (PDF "Textos para publicidad") con más características:
+  pantalla táctil alta resolución, importes hasta 7 dígitos, estados libre/ocupado/reservado, OBD-II + CAN BUS,
+  Bluetooth, telemetría (velocidad, RPM, temperatura, combustible), Tango Driver, Taxi Plus (flotas), pago QR,
+  comprobante digital, anuncio por voz, INMETRO Cert. 444/2026, fabricado en Argentina.
+  Propuesta pendiente de OK: ampliar el bloque ZTX-PRO con esos datos. Dudas abiertas: "sin sensor de velocidad"
+  (no figura en material oficial) y si está homologado en Argentina además de INMETRO.
+- Correcciones de la fábrica aplicadas: marca siempre **FUL-MAR**; título de la sección N° 1 →
+  "Nosotros instalamos el primer Reloj Taxímetro ZTX-PRO en Argentina".
