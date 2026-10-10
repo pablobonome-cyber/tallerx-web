@@ -193,3 +193,12 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
   `#ecosistema` (ZTX-PRO → Tango Driver → Taxi Plus + línea "para el pasajero"). Se quitó "sin sensor de
   velocidad" (no figura en material oficial); ahora dice "OBD-II · compatible con CAN BUS".
   ZTX-PRO: hasta 9 tarifas, importes hasta 7 dígitos, INMETRO Cert. 444/2026, fabricado en Argentina.
+- **ffmpeg instalado** (con permiso del dueño) en `C:\Users\ADMIN\tools\ffmpeg\` (ffmpeg.exe y ffprobe.exe, build
+  essentials de gyan.dev, sha256 verificado). Usarlo para cortar/comprimir videos.
+- Video "ZTX-PRO Video presentación" de FUL-MAR (original 4K, 5:41, 1,5 GB, en Descargas del dueño): se recortó
+  de 0:00 a 3:33,5 (pedido del dueño; en 3:33 empieza el capítulo "ZTX-PRO & Taxi Net Pro", que no va), 720p,
+  27 MB → `video/ztx-pro-presentacion.mp4`, poster `img/ztx-pro-presentacion-poster.jpg`. Va en `#ecosistema`
+  con controles (no autoplay). Comando: `ffmpeg -i ORIGINAL -t 213.53 -vf "scale=1280:720,fade=t=out:st=213.13:d=0.4"
+  -af "afade=t=out:st=213.13:d=0.4" -c:v libx264 -crf 27 -c:a aac -b:a 96k -movflags +faststart SALIDA`.
+- CSS/JS llevan `?v=...` en index.html: cambiar el valor cuando se toquen estilos o scripts.
+- Ojo: la app abre sola una vista previa de index.html sin estilos (parece "rota"); el sitio real es www.tallerxlp.com.

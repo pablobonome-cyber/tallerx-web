@@ -184,6 +184,12 @@ h3 { font-size: 1.45rem; text-transform: uppercase; }
 .eco { background: var(--ink-2); color: var(--white); padding: 80px 0; }
 .eco__head { max-width: 720px; margin: 0 auto 44px; text-align: center; }
 .eco__head p:last-child { color: #c3c6cc; margin: 0; }
+.eco__video { margin: 0 auto 48px; max-width: 960px; }
+.eco__video video {
+  width: 100%; aspect-ratio: 16 / 9; display: block; background: #000;
+  border-radius: var(--radius); border: 1px solid #353941; box-shadow: 0 30px 60px rgba(0,0,0,.4);
+}
+.eco__video figcaption { margin-top: 10px; text-align: center; color: #9aa0a8; font-size: .9rem; }
 .eco__flow { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 44px; }
 .eco__step { position: relative; background: var(--ink); border: 1px solid #353941; border-radius: var(--radius); padding: 28px; }
 .eco__step + .eco__step::before {
