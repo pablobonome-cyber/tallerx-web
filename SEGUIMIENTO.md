@@ -115,8 +115,8 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
       comercial@ haría falta casilla paga o configurar envío SMTP). Pendiente: Google Business / Search Console.
       Paso 2: transferir a registrador propio y apuntar DNS al hosting nuevo.
 - [ ] Elegir hosting y publicar el sitio.
-- [ ] Edición de video real (cortes, audio, compresión) — necesita ffmpeg (no instalado).
-- [ ] **Comprimir el video** (34 MB es pesado para celulares; ideal < 8 MB, 720p) o subirlo a YouTube/Instagram e incrustarlo.
+- [x] ffmpeg instalado en C:SERSADMIN	OOLSFMPEG (09/10/2026).
+- [x] Videos comprimidos (09/10/2026).
 - [ ] Ariel de 6 dígitos: no figura en relojesariel.com.ar (solo Milenio, Bit y tacógrafo Ariel Tac). Falta foto/nombre.
 - [x] Foto del FMD-1000 (imagen de fábrica que pasó el dueño, `img/fulmar-fmd-1000.webp`).
 - [ ] Fotos propias: frente del taller, lubricentro, llaves, trabajos realizados.
@@ -202,3 +202,7 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
   -af "afade=t=out:st=213.13:d=0.4" -c:v libx264 -crf 27 -c:a aac -b:a 96k -movflags +faststart SALIDA`.
 - CSS/JS llevan `?v=...` en index.html: cambiar el valor cuando se toquen estilos o scripts.
 - Ojo: la app abre sola una vista previa de index.html sin estilos (parece "rota"); el sitio real es www.tallerxlp.com.
+- Videos comprimidos con ffmpeg: `fulmar-ztx-pro.mp4` 34 → 6 MB (720x1280) y con **corte real** de la placa de
+  fecha (se quitó el `data-skip`; el JS de salto queda disponible pero sin uso); `ztx-primer-instalado.mp4`
+  14 → 5,6 MB. Total de videos: 38 MB (27 son la presentación de 3:33, que solo baja si se le da play).
+  Como img/video tienen caché de 7 días, al reemplazar un archivo hay que cambiar el `?v=` en su `src`.
