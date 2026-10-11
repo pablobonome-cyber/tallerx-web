@@ -206,3 +206,18 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
   fecha (se quitó el `data-skip`; el JS de salto queda disponible pero sin uso); `ztx-primer-instalado.mp4`
   14 → 5,6 MB. Total de videos: 38 MB (27 son la presentación de 3:33, que solo baja si se le da play).
   Como img/video tienen caché de 7 días, al reemplazar un archivo hay que cambiar el `?v=` en su `src`.
+
+### 2026-10-11 — Análisis: base de turnos, Google y enlace con el sistema de recepción (sin implementar)
+- "+10 años en La Plata · desde 2015" confirmado y publicado.
+- **Sistema de recepción existente** (otro proyecto, NO tocar sin pedido): `C:\wamp64\www\tallerx-codex`
+  (continuidad en su `CONTINUIDAD.md`). PHP 8 + MySQL local `tallerx_prueba` (clientes, vehiculos, solicitudes,
+  turnos, servicios, mensajes, auditoria). Recibe WhatsApp Cloud API por webhook (ngrok) y crea `solicitudes`
+  con `canal` y estado `pendiente_revision`; agenda con franjas de 30 min y 3 cupos.
+- Propuesta presentada al dueño (pendiente de decisión):
+  1. Turnos web → base: el formulario guarda la solicitud en una base chica en la nube (función del hosting +
+     base gratuita) además de abrir WhatsApp; la PC de recepción las **baja** cada tanto y las inserta en
+     `solicitudes` con `canal='web'`. No exponer la PC de recepción a internet para esto.
+  2. Google: ficha de Google Business, Search Console + sitemap/robots, datos estructurados LocalBusiness,
+     páginas propias por servicio, reseñas.
+  3. De paso mudar el hosting a uno apto para uso comercial (Cloudflare Pages) que también da funciones + base.
+  Requisitos: casilla de consentimiento + política de privacidad (Ley 25.326).
