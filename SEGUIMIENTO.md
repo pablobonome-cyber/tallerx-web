@@ -40,20 +40,19 @@ Argentina** (fotos del 27/09/2026). Tiene su propia sección en la web (`#primer
 Sitio **estático** (HTML + CSS + JS puro, sin build, sin backend todavía).
 
 ```
-index.html          Página única (secciones: hero, novedad ZTX-PRO, servicios, productos, turnos, contacto)
+index.html          Página única (secciones: hero, novedad ZTX-PRO, ecosistema, primer ZTX-PRO, servicios,
+                    productos, turnos, contacto)
 css/styles.css      Estilos. Tokens de color en :root (naranja #e9a23b + negro #16181c)
 js/main.js          WhatsApp (data-wa), menú mobile, filtro de productos, form de turnos,
                     animación del display "taxímetro" del hero, video ZTX-PRO
 img/                Logo y fotos de productos (img/_original = descargas originales, sin usar)
-video/fulmar-ztx-pro.mp4          Video promo de Fulmar (vertical 1080x1920, 38 s, 34 MB)
-video/ztx-primer-instalado.mp4    Demo real del primer ZTX-PRO instalado (474x850, 62 s, 14 MB)
+video/fulmar-ztx-pro.mp4          Video promo de FUL-MAR (vertical 720x1280, 33 s, 6 MB; sin la placa de fecha)
+video/ztx-primer-instalado.mp4    Demo real del primer ZTX-PRO instalado (474x850, 62 s, 5 MB)
+video/ztx-pro-presentacion.mp4    Presentación oficial de FUL-MAR recortada (1280x720, 3:33, 26 MB; con controles)
 ```
 
 Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona solo
 (autoplay silenciado al verse, botón de sonido, `data-skip` opcional). Ver `js/main.js`.
-
-```
-```
 
 **Convenciones**
 - Cualquier elemento con `data-wa="texto"` se convierte en link a WhatsApp con ese mensaje.
@@ -67,7 +66,7 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
 - Git local en la carpeta del proyecto, rama `main`.
 - GitHub (privado): https://github.com/pablobonome-cyber/tallerx-web
 - Publicación temporal: **Vercel** (plan Hobby, importando el repo). Cada `git push` a `main` republica solo.
-  - `.vercelignore` excluye SEGUIMIENTO.md y CLAUDE.md de la web publicada.
+  - `.vercelignore` excluye SEGUIMIENTO.md, CLAUDE.md y AGENTS.md de la web publicada.
   - `vercel.json` pone `X-Robots-Tag: noindex` en *.vercel.app (que Google no la indexe) y cache para img/video.
   - Ojo: Hobby es para uso no comercial → para el sitio definitivo evaluar Cloudflare Pages / Netlify.
 
@@ -113,9 +112,12 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
       07/10/2026: **correo activado** — reenvío gratuito de Porkbun: comercial@tallerxlp.com → Gmail del dueño.
       MX fwd1/fwd2.porkbun.com y SPF creados automáticamente. Es solo recepción (para responder "como"
       comercial@ haría falta casilla paga o configurar envío SMTP). Pendiente: Google Business / Search Console.
-      Paso 2: transferir a registrador propio y apuntar DNS al hosting nuevo.
-- [ ] Elegir hosting y publicar el sitio.
-- [x] ffmpeg instalado en C:SERSADMIN	OOLSFMPEG (09/10/2026).
+- [x] Publicar el sitio: online en https://www.tallerxlp.com sobre Vercel (07/10/2026).
+- [ ] Mudar a un hosting apto para uso comercial (Cloudflare Pages / Netlify); Vercel Hobby es provisorio.
+- [ ] Formulario de turnos: no dejar elegir domingos (hoy los acepta).
+- [ ] ZTX-PRO: confirmar si está homologado en Argentina además de INMETRO.
+- [ ] Decidir la propuesta del 11/10 (turnos web → base, Google, hosting). Ver bitácora.
+- [x] ffmpeg instalado en `C:\Users\ADMIN\tools\ffmpeg\` (09/10/2026).
 - [x] Videos comprimidos (09/10/2026).
 - [ ] Ariel de 6 dígitos: no figura en relojesariel.com.ar (solo Milenio, Bit y tacógrafo Ariel Tac). Falta foto/nombre.
 - [x] Foto del FMD-1000 (imagen de fábrica que pasó el dueño, `img/fulmar-fmd-1000.webp`).
@@ -185,8 +187,7 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
   pantalla táctil alta resolución, importes hasta 7 dígitos, estados libre/ocupado/reservado, OBD-II + CAN BUS,
   Bluetooth, telemetría (velocidad, RPM, temperatura, combustible), Tango Driver, Taxi Plus (flotas), pago QR,
   comprobante digital, anuncio por voz, INMETRO Cert. 444/2026, fabricado en Argentina.
-  Duda abierta: 
-  si está homologado en Argentina además de INMETRO (la web solo dice lo del documento).
+  Duda abierta: si está homologado en Argentina además de INMETRO (la web solo dice lo del documento).
 - Correcciones de la fábrica aplicadas: marca siempre **FUL-MAR**; título de la sección N° 1 →
   "Nosotros instalamos el primer Reloj Taxímetro ZTX-PRO en Argentina".
 - Publicado (con OK del dueño): bloque ZTX-PRO ampliado con datos del guion de FUL-MAR y sección nueva
@@ -221,3 +222,8 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
      páginas propias por servicio, reseñas.
   3. De paso mudar el hosting a uno apto para uso comercial (Cloudflare Pages) que también da funciones + base.
   Requisitos: casilla de consentimiento + política de privacidad (Ley 25.326).
+- Limpieza de este archivo (sin cambios en el sitio): sección 2 al día (secciones y videos con sus pesos reales),
+  pendientes ya resueltos tildados, ruta de ffmpeg corregida y pendientes sueltos de la bitácora pasados a la lista.
+- **Contexto compartido entre IAs:** las instrucciones del proyecto ahora viven en `AGENTS.md` (lo leen Codex y
+  otras IAs) y `CLAUDE.md` quedó en una línea que lo importa (`@AGENTS.md`). Editar siempre `AGENTS.md`.
+  En esta PC Codex es la app de escritorio (no hay comando `codex` ni Gemini CLI instalados).
