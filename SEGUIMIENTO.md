@@ -121,7 +121,7 @@ Videos: todo `<div class="reel">` con `<video>` + botón `.reel__sound` funciona
 - [x] Foto del FMD-1000 (imagen de fábrica que pasó el dueño, `img/fulmar-fmd-1000.webp`).
 - [ ] Fotos propias: frente del taller, lubricentro, llaves, trabajos realizados.
 - [ ] Confirmar si es distribuidor oficial de alguna marca (agregar leyenda/logos con autorización).
-- [ ] Confirmar la cifra "+10 años" del hero.
+- [x] "+10 años" confirmado por el dueño: el negocio funciona **desde 2015** (11/10/2026).
 - [ ] Actualizar Google Business Profile con horarios y web nueva.
 - [ ] Fase 2 (PHP + MySQL con Wamp): base de clientes taxistas + aviso de cambio de tarifa;
       consulta de estado de reparación por patente; panel de turnos.
